@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>OfferPro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+	<div id="page-wrapper">
+		<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+				    <h1>
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVGhD7drPK2ZRHMfxyxgZUcRCs0WxkGQjsVN20pSVhY0NpfwPfmSBLJgJO1bIP2AmUiabKdPIWqKmSSSk/Pb+yNXjuo3n4Vydy/nUq5xz3eN86zxP95zLc3kHKUc/fmIXlzjBFubRjhxYmyLM4QrXT9hHJ9JhVSrxF5rkIcbQgEIoH1GMNizBL2gGmbAiBdiGJraIz3gqTTiA7hlWhw0Zgia0jE/qSDI1OMUFytRhKh+Q/wz+ktJSCrv+P1PQvQMJfcnKxYNkYxJH0KBxsokvuM0o1HkGfZvEhf8ZO0cVvH93HSVqxCyD0Nx71NAPEsd0QHP/qoYrxIK4QmyLK8S2uEJsiyvEtrhCbIsrJNmkQduC6oA8mEykhehcawP+uIl0VKSNnKljoEgLWYPG0zb0V4C/ndYETCS0kG4El0KqdAChsXaQgWCaoes62wq7PxW1+IFHhZj0B2GpQ9jvv9SDQnTq9/2FVqCx1hGWeuj6HsLuT8UCVvGoEBPJgg7dRMejWmqJpqG/NQETifTD3gt/zDDHMHWyGGkhSitmEVwK+uothalEXshrxRViW1whtsUVYltcIbblbRait6pqWPfyPononw40dz36eL/vGiNoiRE9z/m7URXkNUKP3eqII23i7t/vV6AP4zHyDV3Q63UXy+J5N8ML5X7Sm7ZWAAAAAElFTkSuQmCC">
+						<a href="index.html" id="logo">   Offer <em>Pro</em></a></h1>
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="current"><a href="#">Resume</a>
+									<ul>
+										<li><a href="1writing.html">How To Write a Resume</a></li>
+										<li><a href="1template.html">Resume Templates</a></li>
+										<li><a href="1review.html">Resume Review</a></li>
+
+									</ul>
+
+								</li>
+								<li>
+									<a href="#">Job Search</a>
+									<ul>
+										<li><a href="2HowToBegin.html">How To Begin</a></li>
+										<li><a href="2OnlineTools.html">Online Tools</a></li>
+										<li><a href="2application.html">Completing An Application</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Interview</a>
+									<ul>
+										<li><a href="3securing.html">Securing an Interview</a></li>
+										<li><a href="3preparing.html">Preparing for an Interview</a></li>
+										<li><a href="3presentation.html">Personal Presentation</a></li>
+									</ul>
+								</li>
+								<li><a href="seminars.html">Seminars</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact-us.html">Contact Us</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header>
+										<h2>Resume Review</h2>
+										<p>Using our state of the art resume review feature you can upload your own resume and will receive professionally guided advice and potential improvements from our experts via email </p>
+
+									</header>
+
+
+
+
+
+
+
+									<div class="container">
+								  <form action="/action_page.php">
+								    <label for="fname">First Name</label>
+								    <input type="text" id="fname" name="firstname" placeholder="Your first name.."><br>
+
+								    <label for="lname">Last Name</label>
+								    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+										<label for="email">Email</label>
+								    <input type="text" id="lname" name="lastname" placeholder="Your Email Address.."><br>
+
+								  </form>
+									<br>
+									<form action="fileupload" method="post" enctype="multipart/form-data">
+
+									<input type="file" name="filetoupload"><br>
+
+									</form>
+								</div>
+								<br>
+								<a id="bttn" onclick="ShowMessage()" class="button">Submit Resume</a>
+								<br>
+
+
+
+
+
+								<script>
+									function ShowMessage() {
+											alert("Your resume has been sent successfully! We will get back to you as soon as possible with the completed review.");
+
+									}
+								 </script>
+								 <script>
+										function myFunction() {
+											var randomNumberBetween0and3 = Math.floor(Math.random() * 4);
+
+											if(randomNumberBetween0and3 == 1){
+										    document.getElementById("demo").innerHTML = "Improve your information for past experiences. Add jobs that fit better for your desired profession.";
+											}
+											if(randomNumberBetween0and3 == 2){
+										    document.getElementById("demo").innerHTML = "Consider adding more detailed information to your education. Sharpen the content in the \"Skills & Abilties\" and remove redundant details.";
+											}
+											if(randomNumberBetween0and3 == 3){
+										    document.getElementById("demo").innerHTML = "No improvements needed! Resume looks good.";
+											}
+										}
+										</script>
+
+										<br>
+										<p><strong>Congratulations!</strong> You have now finished the first major step of the job search process by completing your resume! Please continue to begin searching for the job itself.</p>
+										<a href="2HowToBegin.html" class="button">Proceed to Next Step</a>
+
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+
+				<!-- Footer -->
+					<div id="footer-wrapper">
+						<footer id="footer" class="container">
+							<div class="row">
+								<div class="3u 6u(medium) 12u$(small)">
+
+									<!-- Links -->
+										<section class="widget links">
+											<h3>Helpful Sites</h3>
+											<ul class="style2">
+												<li><a href="https://www.indeed.com/" target="_blank">Indeed</a></li>
+												<li><a href="https://seattle.craigslist.org/d/jobs/search/jjjlink" target="_blank">Craigslist</a></li>
+												<li><a href="https://www.linkedin.com/" target="_blank">Linkedin</a></li>
+												<li><a href="https://www.glassdoor.com/" target="_blank">Glass Door</a></li>
+											</ul>
+										</section>
+
+								</div>
+								<div class="3u 6u$(medium) 12u$(small)">
+
+									<!-- Links -->
+										<section class="widget links">
+											<h3>Helpful Sites</h3>
+											<ul class="style2">
+												<li><a href="https://www.monster.com/" target="_blank">Monster</a></li>
+												<li><a href="https://www.simplyhired.com/" target="_blank">Simply Hired</a></li>
+												<li><a href="http://www.wsj.com/public/page/news-career-jobs.html" target="_blank">Wall Street Journal</a></li>
+												<li><a href="https://www.dice.com/" target="_blank">Dice</a></li>
+											</ul>
+										</section>
+
+								</div>
+									<div class="3u 6u$(medium) 12u$(small)">
+
+									<!-- Contact -->
+										<section class="widget contact last">
+											<h3>Citations</h3>
+											<ul>
+
+									<li><a href="picCite.html">Pictures</a>
+									<li><a href="Cite.html">Videos</a>
+									<li><a href="ContentCite.html">Content</a>
+
+
+											</ul>
+
+										</section>
+
+								</div>
+
+								<div class="3u 6u$(medium) 12u$(small)">
+
+									<!-- Contact -->
+										<section class="widget contact last">
+											<h3>Contact Us</h3>
+											<ul>
+
+								<ul class="icons">
+							<li><a href="https://twitter.com/OfferPro_" class="icon fa-twitter" ><span class="label" target="_blank">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/OfferPro-137998010179724/?ref=settings" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									</ul>
+
+
+											</ul>
+											<p>1234 Fictional Road<br />
+											Seattle, Wa 98024<br />
+											(800) 555-0000</p>
+										</section>
+
+								</div>
+
+
+							</div>
+							<div class="row">
+								<div class="12u">
+									<div id="copyright">
+										<ul class="menu">
+											<li>&copy; OfferPro. All rights reserved</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</footer>
+					</div>
+
+			</div>
+
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.dropotron.min.js"></script>
+				<script src="assets/js/skel.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+				<script src="assets/js/main.js"></script>
+
+		</body>
+		</html>
